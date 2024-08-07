@@ -1,4 +1,4 @@
-package model;
+package api01.demo.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

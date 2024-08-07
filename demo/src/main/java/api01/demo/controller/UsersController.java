@@ -1,9 +1,9 @@
-package controller;
+package api01.demo.controller;
 
-import model.Users;
+import api01.demo.model.Users;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.Usersservices;
+import api01.demo.service.Usersservices;
 
 import java.net.URI;
 import java.util.List;
@@ -20,7 +20,7 @@ public class UsersController {
     }
 
     @PostMapping
-    public ResponseEntity<Users> createUser(@RequestBody CreateUsersDto createUsersDto) throws Exception {
+    public ResponseEntity<Users> createUser(@RequestBody CreateUsersDto createUsersDto)  {
         var userId = usersservice.createUsers(createUsersDto);
 
         return (ResponseEntity<Users>) ResponseEntity.created(URI.create("users"));

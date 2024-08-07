@@ -1,7 +1,7 @@
-package repository;
+package api01.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import model.Users;
+import api01.demo.model.Users;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -1,10 +1,10 @@
-package service;
+package api01.demo.service;
 
-import controller.CreateUsersDto;
-import controller.UpdateUsersDto;
-import model.Users;
+import api01.demo.controller.CreateUsersDto;
+import api01.demo.controller.UpdateUsersDto;
+import api01.demo.model.Users;
 import org.springframework.stereotype.Service;
-import repository.UsersRepository;
+import api01.demo.repository.UsersRepository;
 
 import java.util.List;
 
